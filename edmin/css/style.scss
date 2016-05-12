@@ -2229,6 +2229,7 @@ fieldset[disabled] {
   }
 }
 
+
 .sidebar-user {
   .user-avatar {
     background: $white;
@@ -2280,8 +2281,17 @@ fieldset[disabled] {
     padding: 15px;
     text-decoration: none !important;
   }
-  .menu-icon {
+  .menu-header {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 18px;
     color: $white;
+    background-color: $color_belize_hole_approx;
+  }
+  .menu-icon {
+    color: $black;
     margin-right: 10px;
     transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
@@ -2309,17 +2319,20 @@ fieldset[disabled] {
   }
   > li {
     + li {
-      border-top: 1px solid $white;
+      border-top: 3px solid $color_wild_sand_approx;
     }
     > .active {
-      font-size:20px;
-      color: $white;
+      color: $color_belize_hole_approx;
+      font-size: 18px;
       font-weight:bold;
-      border-left:20px solid $color_pickled_bluewood_approx;
+      border-left:5px solid $color_belize_hole_approx;
+      .menu-icon {
+        color: $color_belize_hole_approx;
+      }
     }
     > a {
-      background-color: $color_belize_hole_approx;
-      color: $white;
+      background-color: $white;
+      color: $black;
       font-size: 16px;
       transition: all .2s ease-in-out;
       -moz-transition: all .2s ease-in-out;
@@ -2341,11 +2354,12 @@ fieldset[disabled] {
         }
       }
       &:hover {
-        background-color: $color_pickled_bluewood_approx;
-        color: $alabaster;
-        border-left:5px solid $white;
+        color: $color_belize_hole_approx;
+        font-size: 18px;
+        font-weight:bold;
+        border-left:5px solid $color_belize_hole_approx;
         .menu-icon {
-          color: $white;
+          color: $color_belize_hole_approx;
         }
       }
     }
